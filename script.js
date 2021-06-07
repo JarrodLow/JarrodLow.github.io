@@ -35,11 +35,11 @@ inputAmount.addEventListener("keydown", function (e) {
 				maximum: 50,
 			},
 			format: {
-				// at least one number, one alphabet, one special character and no spacing allowed
-				pattern: "(?=.*[a-z])(?=.*\\d)(?=.*[@$!%*#?&])[a-z\\d@$!%*#?&]+$",
+				// allowing number,letter and special character
+				pattern: "[a-z\\d@$!%*#?&_-+]+$",
 				flags: "i", // ignore if the username is uppercase or lowercase
 				message:
-					"should contain at least one alphabet, one number letter, one special character and no spacing between them",
+					"Only allow letter, number and special character to be used in password",
 			},
 		},
 		"confirm-password": {
@@ -51,11 +51,11 @@ inputAmount.addEventListener("keydown", function (e) {
 				message: "Passwords does not match",
 			},
 			format: {
-				// at least one number, one alphabet, one special character and no spacing allowed
-				pattern: "(?=.*[a-z])(?=.*\\d)(?=.*[@$!%*#?&])[a-z\\d@$!%*#?&]+$",
+				// allowing number,letter and special character
+				pattern: "[a-z\\d@$!%*#?&_-+]+$",
 				flags: "i", // ignore if the username is uppercase or lowercase
 				message:
-					"should contain at least one a-z, one 0-9 letter, one special character and no spacing between them",
+					"Only allow letter, number and special character to be used in password",
 			},
 		},
 		"contact-number": {
