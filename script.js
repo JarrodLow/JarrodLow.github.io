@@ -20,10 +20,10 @@ inputAmount.addEventListener("keydown", function (e) {
 			},
 			format: {
 				// at least one number, one alphabet and no spacing allowed
-				pattern: "(?=.*[a-z])(?=.*\\d)[a-z\\d]+$",
+				pattern: "[a-zA-Z0-9]",
 				flags: "i", // ignore if the username is uppercase or lowercase
 				message:
-					"should contain at least one alphabet, one number and no spacing between them",
+					"should contain at least one alphabet, one number and no spacing between themOn",
 			},
 		},
 		password: {
